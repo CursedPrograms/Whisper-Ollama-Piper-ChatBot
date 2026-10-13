@@ -20,13 +20,23 @@
 </div>
 <br>
 
-# Whisper-Ollama-Piper-ChatBot
+# Jenny
+
+*Formerly Whisper-Ollama-Piper-ChatBot.*
+
+> [!NOTE]
+> **Jenny is a template, not an official robot.** She is a minimal starting point for building
+> your own local voice assistant: copy her (**Use this template** on GitHub), rename her, give her
+> a new system prompt and voice. She is **not** part of the
+> [DREAM Robotics Ecosystem](https://github.com/CursedPrograms/DREAM): its official minds
+> (DREAM, TINA, NINA, RIFT, LYCEA) and robots (NORA, MILA, WHIP, KIDA-00, KIDA-01, IDA, ARM)
+> live in their own repos.
 
 **Jenny**, a voice assistant that runs entirely on your own machine: you talk, **Whisper**
 turns it into text, a local model in **Ollama** answers, and **Piper** says the answer out loud.
 No cloud, no API keys.
 
-**Website:** https://cursedprograms.github.io/Whisper-Ollama-Piper-ChatBot/
+**Website:** https://cursedprograms.github.io/Jenny/
 
 [Farica☆Kimora](https://github.com/Farica-Kimora) © Cursed Entertainment
 

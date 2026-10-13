@@ -1,6 +1,6 @@
 {
     "Config": {
-      "AppName": "Whisper-Ollama-Piper-ChatBot",
+      "AppName": "Jenny",
       "Description": "Jenny: a local voice assistant. Whisper hears you, Ollama thinks, Piper speaks.",
       "ProjectStructure": {
         "MainScript": "main.py",
