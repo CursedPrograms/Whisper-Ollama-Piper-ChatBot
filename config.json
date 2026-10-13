@@ -1,0 +1,17 @@
+{
+    "Config": {
+      "AppName": "Whisper-Ollama-Piper-ChatBot",
+      "Description": "Jenny: a local voice assistant. Whisper hears you, Ollama thinks, Piper speaks.",
+      "ProjectStructure": {
+        "MainScript": "main.py",
+        "DependenciesScript": "scripts/install_dependencies.py"
+      },
+      "Jenny": {
+        "SystemPrompt": "You are Jenny, a friendly local voice assistant. Answer in one to three short sentences of plain spoken English: no markdown, lists or emoji, because everything you write is read aloud.",
+        "Model": "phi3:mini",
+        "MicDevice": "plughw:1,0",
+        "SpeakerDevice": "plughw:2,0",
+        "RecordSeconds": 4
+      }
+    }
+  }

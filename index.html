@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jenny - a local voice assistant (Whisper, Ollama, Piper)</title>
+<meta name="description" content="Jenny: a voice assistant that runs entirely on your own machine. Whisper hears you, Ollama answers, Piper speaks. No cloud, no API keys.">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="site/style.css">
+<script src="site/site.js" defer></script>
+</head>
+<body>
+
+<header class="masthead">
+  <p class="eyebrow">Whisper &middot; Ollama &middot; Piper</p>
+  <h1>Jenny</h1>
+  <p class="lead">A voice assistant that runs entirely on your own machine. No cloud, no API keys.</p>
+  <a class="button" href="https://github.com/CursedPrograms/Whisper-Ollama-Piper-ChatBot">GET IT ON GITHUB</a>
+</header>
+
+<main>
+  <section class="pipeline" aria-label="How a turn flows">
+    <div class="stage" data-step="0"><span class="icon">&#127908;</span><b>You speak</b><small>arecord, 4 s</small></div>
+    <div class="arrow"></div>
+    <div class="stage" data-step="1"><span class="icon">&#128066;</span><b>Whisper</b><small>speech to text</small></div>
+    <div class="arrow"></div>
+    <div class="stage" data-step="2"><span class="icon">&#129504;</span><b>Ollama</b><small>phi3:mini thinks</small></div>
+    <div class="arrow"></div>
+    <div class="stage" data-step="3"><span class="icon">&#128483;</span><b>Piper</b><small>text to speech</small></div>
+    <div class="arrow"></div>
+    <div class="stage" data-step="4"><span class="icon">&#128264;</span><b>Jenny speaks</b><small>aplay</small></div>
+  </section>
+
+  <section class="chat" aria-live="polite">
+    <p class="bubble you" id="you">&hellip;</p>
+    <p class="bubble jenny" id="jenny">&hellip;</p>
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <h2>What you need</h2>
+      <ul>
+        <li>Linux with ALSA (<code>arecord</code>, <code>aplay</code>)</li>
+        <li>Python 3.9+ and ffmpeg</li>
+        <li>Ollama with <code>phi3:mini</code> (or any model)</li>
+        <li>A Piper voice in <code>voices/</code></li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>Run it</h2>
+      <pre><code>pip install -r requirements.txt
+ollama pull phi3:mini
+python main.py</code></pre>
+      <p>Say <b>goodbye</b> to stop.</p>
+    </article>
+    <article class="card">
+      <h2>Make it yours</h2>
+      <p><code>config.json</code> sets Jenny's personality, the model, your mic and speaker devices and how long it listens.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <p><a href="https://farica-kimora.github.io/FaricaKimora/">Farica&#9734;Kimora</a> &copy; Cursed Entertainment</p>
+  <a href="https://cursed-entertainment.itch.io/">
+    <img src="https://github.com/CursedPrograms/cursedentertainment/raw/main/images/logos/logo-wide-grey.png" alt="Cursed Entertainment" width="250">
+  </a>
+  <a href="https://github.com/SynthWomb">
+    <img src="https://github.com/SynthWomb/synth.womb/raw/main/logos/synthwomb07.png" alt="SynthWomb" width="200">
+  </a>
+  <p class="small"><a href="https://github.com/CursedPrograms/Whisper-Ollama-Piper-ChatBot">GitHub</a> &middot; MIT licence</p>
+</footer>
+
+</body>
+</html>

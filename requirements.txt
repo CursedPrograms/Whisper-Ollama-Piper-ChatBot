@@ -1,0 +1,5 @@
+requests
+numpy
+rich
+openai-whisper
+piper-tts
